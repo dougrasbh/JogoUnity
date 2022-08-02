@@ -6,6 +6,7 @@ public class Frog : MonoBehaviour
 {
     private Rigidbody2D rig;
     private Animator anim;
+   
 
     public float speed;
 
@@ -20,6 +21,8 @@ public class Frog : MonoBehaviour
 
     public BoxCollider2D boxCollider2D;
     public CircleCollider2D circleCollider2D;
+    public AudioSource enemyDie;
+
 
     void Start()
     {
@@ -54,6 +57,7 @@ public class Frog : MonoBehaviour
                 boxCollider2D.enabled = false;
                 circleCollider2D.enabled = false;
                 rig.bodyType = RigidbodyType2D.Kinematic;
+                enemyDie.Play();
                 Destroy(gameObject, 0.33f);
             }
             else
@@ -64,4 +68,5 @@ public class Frog : MonoBehaviour
             }
         }
     }
+    
 }

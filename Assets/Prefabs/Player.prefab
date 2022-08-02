@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2196365768830574468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.13, y: -0.16, z: 0}
-  m_LocalScale: {x: 2.084647, y: 2.084647, z: 2.084647}
+  m_LocalScale: {x: 3.1665468, y: 3.4590528, z: 2.1767883}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -152,6 +152,7 @@ MonoBehaviour:
   JumpForce: 10
   isJumping: 0
   doubleJump: 0
+  jumpSound: {fileID: 0}
 --- !u!95 &2196365768830574474
 Animator:
   serializedVersion: 4
@@ -187,4 +188,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.004246199, y: -0.0700629}
   serializedVersion: 2
-  m_Radius: 0.09206025
+  m_Radius: 0.15
